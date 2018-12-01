@@ -130,8 +130,8 @@ class Dot(Brain, Barrier):
             # self.set_yvel(0.1*(self.get_yvel() + self.get_accl().y))
             # below not bad may be better than above
             # reset the velocity to an acceleration vector if velocity gets to large
-            self.set_xvel(self.get_accl().x)
-            self.set_yvel(self.get_accl().y)
+            # self.set_xvel(self.get_accl().x)
+            # self.set_yvel(self.get_accl().y)
             # add velocity to position
             xp = self.get_xpos() + self.get_xvel()
             yp = self.get_ypos() + self.get_yvel()
